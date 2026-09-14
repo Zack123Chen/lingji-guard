@@ -1,0 +1,25 @@
+menu "CareGuard production options"
+
+config CAREGUARD_CAMERA_STACK_DIAG
+    bool "Build isolated camera stack diagnostic"
+    default n
+    help
+        Build only the isolated camera stack diagnostic entry point.
+        Leave disabled for the production CareGuard firmware.
+
+config CAREGUARD_TF_WRITE_PROBE
+    bool "Build isolated TF write probe"
+    default n
+    help
+        Build only the isolated TF write probe entry point.
+        This does not initialize production services.
+
+config CAREGUARD_TF_WRITE_PROBE_WITH_CAMERA
+    bool "Run TF write probe after camera init"
+    depends on CAREGUARD_TF_WRITE_PROBE
+    default n
+    help
+        Initialize esp32-camera and restore the shared I2C bus before running
+        the isolated TF write probe.
+
+endmenu

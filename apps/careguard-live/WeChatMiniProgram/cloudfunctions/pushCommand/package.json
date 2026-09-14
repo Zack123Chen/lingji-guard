@@ -1,0 +1,9 @@
+{
+  "name": "pushCommand",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "mqtt": "^5.14.1",
+    "wx-server-sdk": "~3.0.1"
+  }
+}

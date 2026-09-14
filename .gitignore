@@ -1,0 +1,65 @@
+# macOS and local editor state
+.DS_Store
+**/.DS_Store
+.obsidian/workspace.json
+**/.idea/
+
+# Secrets and private backups
+.env
+.env.*
+!.env.example
+!.env.local.example
+archive/private/
+
+# Package managers and frontend builds
+**/node_modules/
+**/dist/
+**/.vite/
+npm-debug.log*
+
+# PlatformIO / Python generated files
+**/.pio/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+
+# Keil and debugger generated files
+firmware/stm32f103-keil/Objects/
+firmware/stm32f103-keil/Listings/
+firmware/stm32f103-keil/JLinkLog.txt
+firmware/stm32f103-keil/*.uvguix.*
+
+# Reproducible diagnostic and report intermediates
+firmware/esp32-s3/logs/*.log
+tools/report-generation/**/render*/
+tools/report-generation/**/review_pages.txt
+
+# Public source repository: original materials and personal data remain local
+.obsidian/
+artifacts/
+audit/
+archive/report-work/
+firmware/esp32-s3/captures/
+docs/competition/PPT制作工作区/
+docs/project-overview/通知提到的链接的内容.md
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.pdf
+*.bundle
+*.zip
+*.mp4
+*.mov
+*.ttf
+*.otf
+*.woff
+*.woff2
+docs/**/*.png
+docs/**/*.jpg
+docs/**/*.jpeg
+docs/**/*.webp
+tools/report-generation/**/assets/
